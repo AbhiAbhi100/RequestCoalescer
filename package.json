@@ -1,0 +1,40 @@
+{
+  "name": "request-coalescer",
+  "version": "1.0.0",
+  "description": "A production-quality TypeScript library to merge duplicate concurrent asynchronous requests into a single execution by sharing the same Promise.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "request",
+    "coalescing",
+    "promise-sharing",
+    "thundering-herd",
+    "cache-stampede",
+    "deduplication",
+    "concurrency",
+    "async"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^8.0.0",
+    "vitest": "^1.0.0"
+  }
+}
