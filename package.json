@@ -1,6 +1,6 @@
 {
   "name": "request-coalescer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A production-quality TypeScript library to merge duplicate concurrent asynchronous requests into a single execution by sharing the same Promise.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
